@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
+    "leaflet.fullscreen": "^4.0.0",
+    "mapbox-gl": "^2.15.0",
     "next": "15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-map-gl": "^8.0.4",
+    "react-leaflet": "^5.0.0",
+    "react-map-gl": "^7.0.18",
     "react-player": "^2.16.0"
   },
   "devDependencies": {

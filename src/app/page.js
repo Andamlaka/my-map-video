@@ -1,11 +1,11 @@
-import React from 'react'
+import Map from "./components/Map";
+import Video from "./components/Video";
 
-const page = () => {
+export default function Home() {
   return (
-    <div>
-      <h1 className='text-3xl text-red'>Home</h1>
+    <div className="relative w-full h-screen">
+      <Map />
+      <Video />
     </div>
-  )
+  );
 }
-
-export default page
