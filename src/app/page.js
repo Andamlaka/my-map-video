@@ -1,3 +1,5 @@
+"use client";
+
 import Map from "./components/Map";
 import Video from "./components/Video";
 
