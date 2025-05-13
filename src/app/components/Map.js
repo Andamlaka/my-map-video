@@ -1,10 +1,12 @@
+// app/components/Map.js
 "use client";
-import MapClient from "./MapClient";
+import dynamic from "next/dynamic";
 
-export default function Map() {
-  return (
-    <div className="w-full flex justify-center items-center bg-gray-100 p-4">
-      <MapClient />
-    </div>
-  );
+// Load MapClient only in the browser
+const MapClient = dynamic(() => import("./MapClient"), {
+  ssr: false,
+});
+
+export default function Map({ setSelectedCity }) {
+  return <MapClient setSelectedCity={setSelectedCity} />;
 }
